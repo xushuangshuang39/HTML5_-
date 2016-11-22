@@ -27,8 +27,13 @@
   }
 
 
-  nav ul{ width:1000px; height:30px; margin:0px auto}
-nav ul li{ display:block; float:left; padding:0px 0px; }
+ 
+
+nav #we{ width:1000px; height:30px; margin:0px auto}
+nav #we>li{ display:block; float:left; padding:0px 0px; }
+nav #we>li>ul{float: left; z-index: 999;}
+nav #we>li>ul>li{/*z-index: 999;*/float: left;}
+
 </style>
 </head>
 
@@ -52,7 +57,7 @@ nav ul li{ display:block; float:left; padding:0px 0px; }
     <div class="row">
     <div class="col-md-12 column">
       <nav class="navbar navbar-default" style="background-color:rgb(0,112,189);"> 
-         <ul class="nav navbar-nav">
+         <ul class="nav navbar-nav" id="we">
              <li style="margin-left:25px"><a href="#" style="font-size:22px;font-weight:bold;color:white">首页</a></li>
              <li class="dropdown">
                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:22px;font-weight:bold;color:white;text-align:center">语文</a>
